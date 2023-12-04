@@ -25,3 +25,4 @@ test('get doc link',async ({ page }) => {
   await page.getByRole('link', { name: 'Docs'}).click();
   await expect(page.getByRole('heading', {name: 'Installation' })).toBeVisible();
 })
+
